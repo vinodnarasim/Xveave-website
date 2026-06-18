@@ -116,7 +116,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 .eyebrow {
   display: inline-flex; align-items: center; gap: 8px;
   font-family: var(--mono); font-size: 0.78rem; letter-spacing: 0.14em;
-  text-transform: uppercase; color: var(--muted);
+  text-transform: uppercase; color: var(--ink);
   margin-bottom: 18px;
 }
 .eyebrow svg { flex: none; }
@@ -276,7 +276,7 @@ a.card:hover .more::after { content: " →"; }
 .site-footer p { font-size: 0.92rem; color: var(--muted); max-width: 340px; }
 .site-footer h4 {
   font-family: var(--mono); font-size: 0.75rem; letter-spacing: 0.12em;
-  text-transform: uppercase; color: var(--muted); margin-bottom: 12px;
+  text-transform: uppercase; color: var(--ink); margin-bottom: 12px;
 }
 .site-footer ul { list-style: none; }
 .site-footer ul li { margin-bottom: 8px; }
