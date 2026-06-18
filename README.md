@@ -28,7 +28,7 @@ The form posts to Formspree. Create a free form at formspree.io, then replace `Y
 
 - [ ] Replace `YOUR_FORM_ID` in contact.html
 - [ ] Add the LinkedIn company URL (footer + contact page, currently `#`)
-- [ ] Set up info@xveave.com (Zoho Mail free tier or Google Workspace) and its MX records
+- [ ] Set up hello@xveave.com (Zoho Mail free tier or Google Workspace) and its MX records
 - [ ] Add real product screenshots to the Implementation Accelerator page
 - [ ] Review Selective Distribution Management copy against actual POC scope
 
