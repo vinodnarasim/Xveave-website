@@ -19,6 +19,37 @@
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"Organization","name":"Xveave Technologies","url":"https://xveave.com","email":"info@xveave.com","slogan":"Unique Business Challenges. Intelligent Solutions.","address":{"@type":"PostalAddress","addressLocality":"Bengaluru","addressCountry":"IN"},"knowsAbout":["SAP BTP","SAP S/4HANA","Artificial Intelligence","Fashion","Retail","Distribution"]}
 </script>
+<style>
+/* Card style overrides */
+.grid-4 .card {
+  border-top: 3px solid #B8742D;
+  border-radius: 0 0 10px 10px;
+  background: #fff;
+}
+.grid-4 .card h3 {
+  font-size: 1.05rem;
+  color: #16181D;
+}
+.grid-4 .card .more {
+  color: #B8742D;
+}
+
+/* Featured Innovations — DesignVeave dark */
+.grid-3 .card:first-child {
+  background: #2D3A8C;
+  border-color: #2D3A8C;
+  color: #fff;
+}
+.grid-3 .card:first-child h3 { color: #fff; }
+.grid-3 .card:first-child p { color: rgba(255,255,255,0.78); }
+.grid-3 .card:first-child .more { color: #F0B16A; padding-top: 16px; }
+
+/* Featured Innovations — BuildVeave & Selective light tint */
+.grid-3 .card:not(:first-child) {
+  background: #F7F7F3;
+  border-color: #E2E2DB;
+}
+</style>
 </head>
 <body>
 <header class="site-header">
@@ -102,7 +133,7 @@
 
 <style>
 /* ---- Slider ---- */
-.hero-slider { position:relative; overflow:hidden; padding:0; min-height:560px; }
+.hero-slider { position:relative; overflow:hidden; padding:0; min-height:640px; }
 .hero-slide {
   position:absolute; inset:0;
   display:flex; flex-direction:column; justify-content:center;
@@ -275,7 +306,7 @@
 </div>
 </section>
 
-<section class="section">
+<section class="section" style="padding-top:100px">
 <div class="wrap prose">
 <p class="eyebrow"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M3 21 L12 12 L21 21" stroke="#2D3A8C" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M3 3 L12 12 L21 3" stroke="#B8742D" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Let's Build What's Next</span></p>
 <h2>Every organization is different.</h2>
