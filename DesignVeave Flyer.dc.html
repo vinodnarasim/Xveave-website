@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./doc-page.js"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=Space+Grotesk:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box}
+doc-page:not(:defined){visibility:hidden}
+.page{font-family:"IBM Plex Sans",sans-serif;color:#fff;background:#0E1220;-webkit-font-smoothing:antialiased}
+h1,h2,h3{font-family:'Space Grotesk',sans-serif;margin:0}
+.eyebrow{display:inline-flex;align-items:center;gap:8px;font-family:'IBM Plex Mono',monospace;font-size:10.5px;letter-spacing:0.16em;text-transform:uppercase;color:rgba(255,255,255,0.6);margin:0}
+.eyebrow::before{content:"";width:6px;height:6px;border-radius:50%;background:#E7A15C;display:inline-block}
+.ai{display:inline-flex;align-items:center;gap:5px;font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:0.08em;text-transform:uppercase;color:#8FA0FF;background:rgba(143,160,255,0.14);border:1px solid rgba(143,160,255,0.35);border-radius:99px;padding:3px 9px}
+.ai::before{content:"";width:5px;height:5px;border-radius:50%;background:#8FA0FF;display:inline-block}
+.foot{display:flex;justify-content:space-between;align-items:center;font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:0.08em;text-transform:uppercase;color:rgba(255,255,255,0.4)}
+</style>
+</helmet>
+
+<doc-page size="a4">
+<!-- PAGE 1 — COVER -->
+<section class="page" id="p1">
+<div style="position:relative;height:100%;padding:56px 56px;display:flex;flex-direction:column;overflow:hidden">
+<svg viewBox="0 0 800 1120" preserveAspectRatio="xMidYMid slice" fill="none" style="position:absolute;inset:0;width:100%;height:100%;pointer-events:none"><g opacity="0.15"><path d="M520 1200 L1000 200" stroke="#E7A15C" stroke-width="80" stroke-linecap="round"/><path d="M440 -80 L960 900" stroke="#8FA0FF" stroke-width="80" stroke-linecap="round" stroke-dasharray="220 150"/><path d="M640 1240 L1080 340" stroke="#E7A15C" stroke-width="44" stroke-linecap="round"/></g></svg>
+<div style="position:relative;display:flex;align-items:center;justify-content:space-between">
+<span style="display:flex;align-items:center;gap:2px;font-family:'Syne',sans-serif;font-weight:700;font-size:22px;color:#fff"><svg viewBox="0 0 24 24" style="width:0.82em;height:0.82em;margin-right:2px" fill="none"><path d="M3 21 L12 12 L21 21" stroke="#8FA0FF" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M3 3 L12 12 L21 3" stroke="#E7A15C" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/></svg><span>veave</span></span>
+<span style="font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:0.14em;text-transform:uppercase;color:rgba(255,255,255,0.5)">Process Design Platform</span>
+</div>
+
+<div style="position:relative;margin-top:76px">
+<p class="eyebrow">SAP design phase · AI-augmented · built for reuse</p>
+<h1 style="font-size:52px;line-height:1;letter-spacing:-0.025em;margin:22px 0 0">DesignVeave<sup style="font-size:0.32em;vertical-align:super">©</sup></h1>
+<p style="font-family:'Space Grotesk',sans-serif;font-weight:600;color:#8FA0FF;font-size:24px;line-height:1.25;margin:16px 0 0">AI-engineered process design<br>for SAP implementation.</p>
+<p style="font-size:15px;line-height:1.6;color:rgba(255,255,255,0.72);margin:22px 0 0;max-width:520px">A faster, more structured SAP design phase — with consistent, traceable outcomes from the first workshop to final sign-off.</p>
+</div>
+
+<div style="position:relative;margin-top:40px;display:grid;grid-template-columns:1fr 1fr;gap:12px">
+<div style="background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.12);border-radius:10px;padding:16px 18px"><h3 style="font-size:14px;margin:0 0 4px">Capture the workshop</h3><p style="font-size:12px;line-height:1.5;color:rgba(255,255,255,0.6);margin:0">Live notes, tagged in context — structured output, not raw notes.</p></div>
+<div style="background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.12);border-radius:10px;padding:16px 18px"><h3 style="font-size:14px;margin:0 0 4px">Structure the design</h3><p style="font-size:12px;line-height:1.5;color:rgba(255,255,255,0.6);margin:0">Requirements, solutions, RICEF — linked and traceable.</p></div>
+<div style="background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.12);border-radius:10px;padding:16px 18px"><h3 style="font-size:14px;margin:0 0 4px">Reuse what you've solved</h3><p style="font-size:12px;line-height:1.5;color:rgba(255,255,255,0.6);margin:0">Start from proven design across rollouts and programs.</p></div>
+<div style="background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.12);border-radius:10px;padding:16px 18px"><h3 style="font-size:14px;margin:0 0 4px">Let the agent do the routine</h3><p style="font-size:12px;line-height:1.5;color:rgba(255,255,255,0.6);margin:0">AI drafts; consultants verify. Build-work becomes verify-work.</p></div>
+</div>
+
+<div style="position:relative;margin-top:auto;border-radius:12px;overflow:hidden;border:1px solid rgba(255,255,255,0.12)"><img src="assets/designveave-hero.png" alt="DesignVeave dashboard" style="width:100%;display:block"></div>
+</div>
+</section>
+
+<!-- PAGE 2 — WHY / REBUILT -->
+<section class="page" id="p2">
+<div style="height:100%;padding:52px 56px;display:flex;flex-direction:column;justify-content:space-between">
+<div>
+<p class="eyebrow">When the design phase falls short</p>
+<h2 style="font-size:26px;line-height:1.15;margin:14px 0 6px">The cost shows up later — and compounds.</h2>
+<p style="font-size:13.5px;line-height:1.6;color:rgba(255,255,255,0.68);margin:0 0 20px;max-width:600px">The single biggest controllable cause of project failure sits in the design phase — before a line of code exists.</p>
+
+<div style="display:grid;grid-template-columns:1fr 1fr;gap:12px">
+<div style="background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.12);border-radius:10px;padding:16px 18px"><p style="font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:28px;color:#8FA0FF;margin:0">47%</p><p style="font-size:12px;line-height:1.5;color:rgba(255,255,255,0.65);margin:6px 0 0">of failed projects trace back to inaccurate requirements. <span style="color:rgba(255,255,255,0.4)">— PMI</span></p></div>
+<div style="background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.12);border-radius:10px;padding:16px 18px"><p style="font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:28px;color:#E7A15C;margin:0">56%</p><p style="font-size:12px;line-height:1.5;color:rgba(255,255,255,0.65);margin:6px 0 0">less value delivered, 45% over budget on large IT projects. <span style="color:rgba(255,255,255,0.4)">— McKinsey / Oxford</span></p></div>
+<div style="background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.12);border-radius:10px;padding:16px 18px"><p style="font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:28px;color:#8FA0FF;margin:0">8%</p><p style="font-size:12px;line-height:1.5;color:rgba(255,255,255,0.65);margin:6px 0 0">of S/4HANA projects finish on schedule; 65% find quality deficits post go-live. <span style="color:rgba(255,255,255,0.4)">— Horváth 2025</span></p></div>
+<div style="background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.12);border-radius:10px;padding:16px 18px"><p style="font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:28px;color:#E7A15C;margin:0">100×</p><p style="font-size:12px;line-height:1.5;color:rgba(255,255,255,0.65);margin:6px 0 0">the cost to fix a defect after delivery vs. during design. <span style="color:rgba(255,255,255,0.4)">— Boehm &amp; Basili</span></p></div>
+</div>
+</div>
+
+<div style="padding-top:28px;border-top:1px solid rgba(255,255,255,0.12)">
+<p class="eyebrow">The design phase, rebuilt</p>
+<h2 style="font-size:24px;line-height:1.18;margin:14px 0 6px">Same phase — a fundamentally different shape.</h2>
+<p style="font-size:13.5px;line-height:1.6;color:rgba(255,255,255,0.68);margin:0 0 20px;max-width:620px">Every stage runs on one platform — and AI runs underneath all of them, turning build-work into verify-work.</p>
+<div style="display:flex;align-items:stretch;gap:8px">
+<div style="flex:1;background:rgba(143,160,255,0.08);border:1px solid rgba(143,160,255,0.25);border-radius:9px;padding:14px 10px;text-align:center"><p style="font-family:'IBM Plex Mono',monospace;font-size:9px;color:#8FA0FF;margin:0 0 6px">01</p><p style="font-size:12px;font-weight:600;margin:0;line-height:1.3">Repository start</p></div>
+<div style="flex:1;background:rgba(143,160,255,0.08);border:1px solid rgba(143,160,255,0.25);border-radius:9px;padding:14px 10px;text-align:center"><p style="font-family:'IBM Plex Mono',monospace;font-size:9px;color:#8FA0FF;margin:0 0 6px">02</p><p style="font-size:12px;font-weight:600;margin:0;line-height:1.3">Workshop capture</p></div>
+<div style="flex:1;background:rgba(143,160,255,0.08);border:1px solid rgba(143,160,255,0.25);border-radius:9px;padding:14px 10px;text-align:center"><p style="font-family:'IBM Plex Mono',monospace;font-size:9px;color:#8FA0FF;margin:0 0 6px">03</p><p style="font-size:12px;font-weight:600;margin:0;line-height:1.3">Structured BPD</p></div>
+<div style="flex:1;background:rgba(143,160,255,0.08);border:1px solid rgba(143,160,255,0.25);border-radius:9px;padding:14px 10px;text-align:center"><p style="font-family:'IBM Plex Mono',monospace;font-size:9px;color:#8FA0FF;margin:0 0 6px">04</p><p style="font-size:12px;font-weight:600;margin:0;line-height:1.3">Continuous review</p></div>
+<div style="flex:1;background:rgba(143,160,255,0.08);border:1px solid rgba(143,160,255,0.25);border-radius:9px;padding:14px 10px;text-align:center"><p style="font-family:'IBM Plex Mono',monospace;font-size:9px;color:#8FA0FF;margin:0 0 6px">05</p><p style="font-size:12px;font-weight:600;margin:0;line-height:1.3">Final deliverable</p></div>
+</div>
+<div style="margin-top:12px;background:linear-gradient(160deg,#2D3A8C,#232E73);border:1px solid rgba(143,160,255,0.4);border-radius:10px;padding:16px 20px">
+<p style="font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:0.1em;text-transform:uppercase;color:#8FA0FF;margin:0 0 6px">✦ AI throughout</p>
+<p style="font-size:12.5px;line-height:1.55;color:rgba(255,255,255,0.85);margin:0">Build repository · refine notes · propose changes · find similar &amp; reuse · generate tests &amp; authorizations · classify minutes. AI isn't a step in the flow — it's the layer every stage runs on.</p>
+</div>
+</div>
+
+<div class="foot" style="margin-top:26px;padding-top:22px"><span>DesignVeave · Process Design Platform</span><span>02</span></div>
+</div>
+</section>
+
+<!-- PAGE 3 — WHAT IT DOES -->
+<section class="page" id="p3">
+<div style="height:100%;padding:52px 56px;display:flex;flex-direction:column;justify-content:space-between">
+<div>
+<div style="display:flex;align-items:center;gap:12px;margin-bottom:6px"><p class="eyebrow">AI throughout</p><span class="ai">AI-assisted</span></div>
+<h2 style="font-size:26px;line-height:1.15;margin:12px 0 6px">The agent does the routine — consultants verify.</h2>
+<p style="font-size:13.5px;line-height:1.6;color:rgba(255,255,255,0.68);margin:0 0 20px;max-width:620px">AI works from your actual program data at every stage — with the reasoning and a confidence score shown, and a person always in control.</p>
+</div>
+
+<div style="display:grid;grid-template-columns:1fr 1fr;gap:12px">
+<div style="background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.12);border-radius:10px;padding:15px 18px"><h3 style="font-size:13.5px;margin:0 0 4px">Refine notes</h3><p style="font-size:12px;line-height:1.5;color:rgba(255,255,255,0.6);margin:0">Shorthand → clean, structured input, classified by design impact.</p></div>
+<div style="background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.12);border-radius:10px;padding:15px 18px"><h3 style="font-size:13.5px;margin:0 0 4px">Process diagram from business language</h3><p style="font-size:12px;line-height:1.5;color:rgba(255,255,255,0.6);margin:0">Describe a process in plain English; the app builds the swimlane.</p></div>
+<div style="background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.12);border-radius:10px;padding:15px 18px"><h3 style="font-size:13.5px;margin:0 0 4px">Agent proposals</h3><p style="font-size:12px;line-height:1.5;color:rgba(255,255,255,0.6);margin:0">Reads notes, drafts changes to the BPD for you to accept.</p></div>
+<div style="background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.12);border-radius:10px;padding:15px 18px"><h3 style="font-size:13.5px;margin:0 0 4px">Find-similar reuse</h3><p style="font-size:12px;line-height:1.5;color:rgba(255,255,255,0.6);margin:0">Pulls solution + config + RICEF across projects and rollouts.</p></div>
+<div style="background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.12);border-radius:10px;padding:15px 18px"><h3 style="font-size:13.5px;margin:0 0 4px">Test-case generation</h3><p style="font-size:12px;line-height:1.5;color:rgba(255,255,255,0.6);margin:0">Drawn directly from the structured requirements.</p></div>
+<div style="background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.12);border-radius:10px;padding:15px 18px"><h3 style="font-size:13.5px;margin:0 0 4px">Authorization matrix</h3><p style="font-size:12px;line-height:1.5;color:rgba(255,255,255,0.6);margin:0">Roles → activities → t-codes / Fiori apps.</p></div>
+</div>
+
+<div style="margin-top:22px;border-radius:12px;overflow:hidden;border:1px solid rgba(255,255,255,0.12)"><img src="assets/designveave-process-diagram.png" alt="AI process diagram generation" style="width:100%;display:block"></div>
+
+<div class="foot" style="margin-top:0;padding-top:20px"><span>DesignVeave · Process Design Platform</span><span>03</span></div>
+</div>
+</section>
+
+<!-- PAGE 4 — OUTCOME + CTA -->
+<section class="page" id="p4">
+<div style="position:relative;height:100%;padding:52px 56px;display:flex;flex-direction:column;overflow:hidden">
+<svg viewBox="0 0 800 1120" preserveAspectRatio="xMidYMid slice" fill="none" style="position:absolute;inset:0;width:100%;height:100%;pointer-events:none"><g opacity="0.12"><path d="M520 -80 L1000 900" stroke="#8FA0FF" stroke-width="70" stroke-linecap="round" stroke-dasharray="220 150"/><path d="M600 1200 L1060 300" stroke="#E7A15C" stroke-width="70" stroke-linecap="round"/></g></svg>
+<p class="eyebrow" style="position:relative">Zoom in — one workshop</p>
+<h2 style="position:relative;font-size:22px;line-height:1.18;margin:12px 0 14px">Before &amp; after.</h2>
+<div style="position:relative;display:grid;grid-template-columns:1fr 1fr;gap:12px">
+<div style="background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.12);border-radius:10px;padding:16px 18px"><p style="font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:0.1em;text-transform:uppercase;color:rgba(255,255,255,0.5);margin:0 0 10px">Today</p><p style="font-size:12px;line-height:1.6;color:rgba(255,255,255,0.6);margin:0">Scattered notes · hours of typing · days of email review · rework cycles.<br><span style="color:#fff;font-weight:600">Workshop → reviewable design: weeks.</span></p></div>
+<div style="background:linear-gradient(160deg,#2D3A8C,#232E73);border:1px solid rgba(143,160,255,0.4);border-radius:10px;padding:16px 18px"><p style="font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:0.1em;text-transform:uppercase;color:#8FA0FF;margin:0 0 10px">With DesignVeave</p><p style="font-size:12px;line-height:1.6;color:rgba(255,255,255,0.85);margin:0">Live capture · AI drafts proposals · real-time review · same-day sign-off.<br><span style="color:#E7A15C;font-weight:600">Workshop → reviewable design: days.</span></p></div>
+</div>
+
+<div style="position:relative;margin-top:26px;padding-top:24px;border-top:1px solid rgba(255,255,255,0.12)">
+<p class="eyebrow">The outcome</p>
+<h2 style="font-size:24px;line-height:1.15;margin:14px 0 6px">A design phase that finishes on time — and holds up.</h2>
+<div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:16px">
+<div style="background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.12);border-radius:10px;padding:16px 18px"><h3 style="font-size:14px;margin:0 0 5px"><span style="color:#E7A15C;margin-right:6px">✦</span>Finishes on time</h3><p style="font-size:12px;line-height:1.5;color:rgba(255,255,255,0.62);margin:0">Faster authoring and continuous review end the phase on schedule, not in emergency mode.</p></div>
+<div style="background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.12);border-radius:10px;padding:16px 18px"><h3 style="font-size:14px;margin:0 0 5px"><span style="color:#E7A15C;margin-right:6px">✦</span>The business understood it</h3><p style="font-size:12px;line-height:1.5;color:rgba(255,255,255,0.62);margin:0">Reviewed in logical units as it was built — real sign-off, not a rubber-stamp.</p></div>
+<div style="background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.12);border-radius:10px;padding:16px 18px"><h3 style="font-size:14px;margin:0 0 5px"><span style="color:#E7A15C;margin-right:6px">✦</span>Build starts on solid ground</h3><p style="font-size:12px;line-height:1.5;color:rgba(255,255,255,0.62);margin:0">Specs written from sound design — fewer gaps waiting to surface in testing.</p></div>
+<div style="background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.12);border-radius:10px;padding:16px 18px"><h3 style="font-size:14px;margin:0 0 5px"><span style="color:#8FA0FF;margin-right:6px">✦</span>Knowledge stays with the program</h3><p style="font-size:12px;line-height:1.5;color:rgba(255,255,255,0.62);margin:0">Captured in a reusable repository — it doesn't walk out when people roll off.</p></div>
+</div>
+</div>
+
+<div style="position:relative;margin-top:26px;padding-top:24px;border-top:1px solid rgba(255,255,255,0.12)">
+<p class="eyebrow">The compounding advantage</p>
+<h2 style="font-size:22px;line-height:1.2;margin:12px 0 10px">Your design knowledge, kept and reused by you.</h2>
+<p style="font-size:13px;line-height:1.6;color:rgba(255,255,255,0.68);margin:0;max-width:620px">Every BPD lives in a private repository that belongs to your organization — your design decisions, captured and retained by you, not scattered across consultants' laptops or lost when a project ends. Reuse it across your own rollouts and future phases, so each initiative starts ahead instead of from zero. Your data stays yours.</p>
+</div>
+
+<div style="position:relative;margin-top:auto;background:linear-gradient(160deg,#2D3A8C,#232E73);border:1px solid rgba(143,160,255,0.4);border-radius:14px;padding:30px 34px;display:flex;justify-content:space-between;align-items:center;gap:20px">
+<div>
+<h2 style="font-size:20px;line-height:1.25;margin:0 0 6px">See it with your own program context.</h2>
+<p style="font-size:13px;color:rgba(255,255,255,0.75);margin:0">Request a walkthrough — not a generic demo.</p>
+</div>
+<div style="text-align:right;font-family:'IBM Plex Mono',monospace;font-size:12px;line-height:1.8;color:#fff;white-space:nowrap"><div style="color:#8FA0FF;font-weight:500">info@xveave.com</div><div style="color:rgba(255,255,255,0.7)">xveave.com/designveave</div><div style="color:rgba(255,255,255,0.7)">Bengaluru, India</div></div>
+</div>
+
+<div class="foot" style="position:relative;margin-top:20px"><span>DesignVeave · Process Design Platform</span><span>Xveave Technologies Pvt Ltd</span></div>
+</div>
+</section>
+</doc-page>
+</x-dc>
+</body>
+</html>

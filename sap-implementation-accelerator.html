@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=Space+Grotesk:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box}
+body{margin:0;background:#0E1220;color:#fff;font-family:"IBM Plex Sans",sans-serif;-webkit-font-smoothing:antialiased}
+a{text-decoration:none;color:inherit}
+a[data-link]:hover{color:#8FA0FF}
+
+@media(max-width:900px){
+  [style*="grid-template-columns"]{grid-template-columns:1fr !important}
+  header nav{flex-wrap:wrap !important;gap:10px 16px !important;font-size:0.88rem !important;justify-content:flex-start !important}
+}
+@media(max-width:640px){
+  [style*="max-width:1180px"],[style*="max-width:820px"]{padding-left:20px !important;padding-right:20px !important}
+  [style*="padding:16px 40px"]{padding-left:20px !important;padding-right:20px !important}
+  h1{font-size:2.1rem !important;line-height:1.12 !important}
+  h2{font-size:1.5rem !important}
+}
+</style>
+</helmet>
+
+<header style="position:sticky;top:0;z-index:50;background:rgba(14,18,32,0.85);backdrop-filter:blur(10px);border-bottom:1px solid rgba(255,255,255,0.1)">
+<div style="max-width:1180px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;padding:16px 40px">
+<a style="display:flex;align-items:center;gap:2px;font-family:'Syne',sans-serif;font-weight:700;font-size:1.3rem;letter-spacing:-0.01em;color:#fff"><svg viewBox="0 0 24 24" style="width:0.82em;height:0.82em;margin-right:2px" fill="none"><path d="M3 21 L12 12 L21 21" stroke="#8FA0FF" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M3 3 L12 12 L21 3" stroke="#E7A15C" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/></svg><span>veave</span></a>
+<nav style="display:flex;align-items:center;gap:26px;font-family:'IBM Plex Sans';font-size:0.95rem;font-weight:500;color:rgba(255,255,255,0.82)">
+<a data-link href="index.html">Home</a><a data-link href="what-we-build.html">What We Build</a><a data-link href="innovations.html" style="color:#fff;border-bottom:2px solid #E7A15C;padding-bottom:2px">Innovations ▾</a><a data-link href="technology.html">Technology</a><a data-link href="industries.html">Industries</a><a data-link href="about.html">About</a>
+<a href="contact.html" style="font-family:'IBM Plex Mono';font-size:0.85rem;border:1.5px solid rgba(255,255,255,0.4);border-radius:6px;padding:7px 14px;color:#fff">Get in Touch</a>
+</nav>
+</div>
+</header>
+
+<!-- hero -->
+<div style="position:relative;overflow:hidden;border-bottom:1px solid rgba(255,255,255,0.1)">
+<svg viewBox="0 0 1200 600" preserveAspectRatio="xMaxYMid slice" fill="none" style="position:absolute;inset:0;width:100%;height:100%;pointer-events:none;z-index:0"><g opacity="0.14"><path d="M780 720 L1320 120" stroke="#E7A15C" stroke-width="66" stroke-linecap="round"/><path d="M720 -80 L1380 640" stroke="#8FA0FF" stroke-width="66" stroke-linecap="round" stroke-dasharray="200 140"/></g></svg>
+<div style="position:relative;z-index:1;max-width:1180px;margin:0 auto;padding:64px 40px 56px">
+<p style="font-family:'IBM Plex Mono';font-size:0.8rem;color:rgba(255,255,255,0.55);margin:0 0 22px"><a data-link>Innovations</a> / DesignVeave</p>
+<div style="display:grid;grid-template-columns:5fr 6fr;gap:52px;align-items:center">
+<div>
+<h1 style="font-family:'Space Grotesk';font-weight:700;font-size:3rem;line-height:1.05;letter-spacing:-0.02em;margin:0">DesignVeave<sup style="font-size:0.38em;vertical-align:super">©</sup></h1>
+<p style="font-family:'Space Grotesk';color:#8FA0FF;font-size:1.4rem;line-height:1.2;margin:10px 0 0">AI-engineered process design for SAP implementation.</p>
+<p style="margin:20px 0 0;font-size:1.12rem;line-height:1.6;color:rgba(255,255,255,0.72);max-width:520px">A faster, more structured SAP design phase — with consistent, traceable outcomes from the first workshop to final sign-off.</p>
+<div style="margin-top:30px;display:flex;gap:14px"><a style="font-family:'Space Grotesk';font-weight:600;padding:13px 26px;border-radius:8px;background:#8FA0FF;color:#0E1220">Request a walkthrough</a><a style="font-family:'Space Grotesk';font-weight:600;padding:13px 26px;border-radius:8px;border:1.5px solid rgba(255,255,255,0.4);color:#fff">Get in Touch</a></div>
+</div>
+<div><img src="assets/designveave-hero.png" alt="DesignVeave project dashboard" style="width:100%;display:block;border-radius:12px;border:1px solid rgba(255,255,255,0.12);box-shadow:0 24px 60px rgba(0,0,0,0.45)"><p style="font-family:'IBM Plex Mono';font-size:0.72rem;color:rgba(255,255,255,0.45);text-align:center;margin:12px 0 0;letter-spacing:0.04em">Design phase view — process completion, requirements, workshop, RICEF and gap status at a glance</p></div>
+</div>
+</div>
+</div>
+
+<!-- AI-assisted throughout band -->
+<div style="background:#12172a;border-bottom:1px solid rgba(255,255,255,0.1)"><div style="max-width:1180px;margin:0 auto;padding:56px 40px;text-align:center">
+<span style="display:inline-flex;align-items:center;gap:6px;font-family:'IBM Plex Mono';font-size:0.72rem;letter-spacing:0.1em;text-transform:uppercase;color:#8FA0FF;background:rgba(143,160,255,0.14);border:1px solid rgba(143,160,255,0.35);border-radius:99px;padding:5px 13px;margin-bottom:18px"><span style="width:6px;height:6px;background:#8FA0FF;border-radius:50%"></span>AI-assisted throughout</span>
+<p style="font-family:'Space Grotesk';font-size:1.7rem;line-height:1.35;margin:0 auto;max-width:860px">DesignVeave doesn't just capture — it actively assists. <span style="color:#8FA0FF">AI works from your actual program data</span> at every stage, not generic suggestions.</p>
+<p style="font-size:1rem;color:rgba(255,255,255,0.55);margin:16px 0 0">Wherever you see the violet marker, AI is doing the work — with full traceability and human accountability.</p>
+</div></div>
+
+<!-- compounding advantage -->
+<div style="border-bottom:1px solid rgba(255,255,255,0.1);background:#12172a"><div style="max-width:1180px;margin:0 auto;padding:76px 40px">
+<div style="display:flex;align-items:center;gap:14px;flex-wrap:wrap;margin:0 0 14px">
+<p style="display:inline-flex;align-items:center;gap:8px;font-family:'IBM Plex Mono';font-size:0.78rem;letter-spacing:0.16em;text-transform:uppercase;color:rgba(255,255,255,0.6);margin:0"><span style="width:6px;height:6px;background:#E7A15C;border-radius:50%"></span>The compounding advantage</p>
+<span style="display:inline-flex;align-items:center;gap:5px;font-family:'IBM Plex Mono';font-size:0.62rem;letter-spacing:0.08em;text-transform:uppercase;color:#8FA0FF;background:rgba(143,160,255,0.14);border:1px solid rgba(143,160,255,0.35);border-radius:99px;padding:3px 9px"><span style="width:5px;height:5px;background:#8FA0FF;border-radius:50%"></span>AI-assisted</span>
+</div>
+<h2 style="font-family:'Space Grotesk';font-size:2.3rem;line-height:1.15;letter-spacing:-0.01em;margin:0 0 12px;max-width:820px">Every engagement makes <span style="color:#8FA0FF">the next one faster.</span></h2>
+<p style="font-size:1.12rem;color:rgba(255,255,255,0.7);line-height:1.6;max-width:680px;margin:0 0 34px">DesignVeave isn't a document tool you start over with each project. Every BPD you complete feeds a private repository your team searches, reuses, and builds on — so your design capability compounds across projects and rollouts instead of resetting.</p>
+<div style="display:grid;grid-template-columns:1fr 1fr;gap:20px">
+<div style="background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.12);border-radius:12px;padding:26px 24px"><h3 style="font-family:'Space Grotesk';font-size:1.15rem;margin:0 0 8px;color:#fff"><span style="color:#E7A15C;margin-right:8px">✦</span>Your repository grows with every project</h3><p style="font-size:0.96rem;color:rgba(255,255,255,0.68);line-height:1.6;margin:0">Each engagement adds proven, reusable design your team draws from — the next rollout starts from everything the last one already solved.</p></div>
+<div style="background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.12);border-radius:12px;padding:26px 24px"><h3 style="font-family:'Space Grotesk';font-size:1.15rem;margin:0 0 8px;color:#fff"><span style="color:#E7A15C;margin-right:8px">✦</span>Reuse across projects and rollouts</h3><p style="font-size:0.96rem;color:rgba(255,255,255,0.68);line-height:1.6;margin:0">The fifth project starts from the first four — every rollout inherits the design decisions the earlier ones already settled, instead of starting from scratch.</p></div>
+<div style="background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.12);border-radius:12px;padding:26px 24px"><h3 style="font-family:'Space Grotesk';font-size:1.15rem;margin:0 0 8px;color:#fff"><span style="color:#E7A15C;margin-right:8px">✦</span>Knowledge stays in the firm</h3><p style="font-size:0.96rem;color:rgba(255,255,255,0.68);line-height:1.6;margin:0">Design expertise is captured in the platform — it doesn't walk out the door when someone rolls off or moves on.</p></div>
+<div style="background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.12);border-radius:12px;padding:26px 24px"><h3 style="font-family:'Space Grotesk';font-size:1.15rem;margin:0 0 8px;color:#fff"><span style="color:#8FA0FF;margin-right:8px">✦</span>Not a tool — an intelligence layer</h3><p style="font-size:0.96rem;color:rgba(255,255,255,0.68);line-height:1.6;margin:0">Find Similar surfaces the solution, config and RICEF you already proved — the moment a matching requirement appears, not sitting in an archive.</p></div>
+</div>
+<p style="font-family:'Space Grotesk';font-size:1.3rem;line-height:1.5;font-weight:700;color:#fff;border-left:3px solid #E7A15C;padding-left:20px;margin:36px 0 0;max-width:900px">The more you deliver, the sharper your edge — and the same platform becomes a differentiator.</p>
+</div></div>
+
+<!-- FEATURE: Workshop (AI) image right -->
+<div style="border-bottom:1px solid rgba(255,255,255,0.1)"><div style="max-width:1180px;margin:0 auto;padding:72px 40px;display:grid;grid-template-columns:1fr 1.15fr;gap:52px;align-items:center">
+<div>
+<span style="display:inline-flex;align-items:center;gap:6px;font-family:'IBM Plex Mono';font-size:0.68rem;letter-spacing:0.08em;text-transform:uppercase;color:#8FA0FF;background:rgba(143,160,255,0.14);border:1px solid rgba(143,160,255,0.35);border-radius:99px;padding:4px 10px;margin-bottom:16px"><span style="width:5px;height:5px;background:#8FA0FF;border-radius:50%"></span>AI-assisted</span>
+<p style="font-family:'IBM Plex Mono';font-size:0.75rem;letter-spacing:0.14em;text-transform:uppercase;color:rgba(255,255,255,0.5);margin:0 0 10px">Workshop mode</p>
+<h2 style="font-family:'Space Grotesk';font-size:1.9rem;line-height:1.2;margin:0 0 14px">Capture decisions as they happen.</h2>
+<p style="font-size:1.02rem;color:rgba(255,255,255,0.7);line-height:1.65;margin:0 0 12px">Live note capture, attendee tracking, and AI-generated meeting minutes — so every workshop produces structured, searchable output rather than a pile of raw notes.</p>
+<p style="font-size:1.02rem;color:rgba(255,255,255,0.7);line-height:1.65;margin:0">Requirements and decisions flow directly into the project register, traceable back to the session that produced them.</p>
+</div>
+<div><img src="assets/designveave-workshop-minutes-composite.png" alt="DesignVeave workshop session with AI minutes" style="width:100%;display:block;border-radius:12px;border:1px solid rgba(255,255,255,0.12);box-shadow:0 20px 50px rgba(0,0,0,0.4)"><p style="font-family:'IBM Plex Mono';font-size:0.72rem;color:rgba(255,255,255,0.45);text-align:center;margin:12px 0 0;letter-spacing:0.04em">Live workshop session with AI-generated minutes — decisions, action items, open questions</p></div>
+</div></div>
+
+<!-- FEATURE: Proposals (AI) image left -->
+<div style="border-bottom:1px solid rgba(255,255,255,0.1);background:#12172a"><div style="max-width:1180px;margin:0 auto;padding:72px 40px;display:grid;grid-template-columns:1.15fr 1fr;gap:52px;align-items:center">
+<div><img src="assets/designveave-agent-proposals.png" alt="DesignVeave agent proposals" style="width:100%;display:block;border-radius:12px;border:1px solid rgba(255,255,255,0.12);box-shadow:0 20px 50px rgba(0,0,0,0.4)"><p style="font-family:'IBM Plex Mono';font-size:0.72rem;color:rgba(255,255,255,0.45);text-align:center;margin:12px 0 0;letter-spacing:0.04em">Agent proposals — accept, review or reject AI-generated design updates</p></div>
+<div>
+<span style="display:inline-flex;align-items:center;gap:6px;font-family:'IBM Plex Mono';font-size:0.68rem;letter-spacing:0.08em;text-transform:uppercase;color:#8FA0FF;background:rgba(143,160,255,0.14);border:1px solid rgba(143,160,255,0.35);border-radius:99px;padding:4px 10px;margin-bottom:16px"><span style="width:5px;height:5px;background:#8FA0FF;border-radius:50%"></span>AI-assisted</span>
+<p style="font-family:'IBM Plex Mono';font-size:0.75rem;letter-spacing:0.14em;text-transform:uppercase;color:rgba(255,255,255,0.5);margin:0 0 10px">Design solution proposals</p>
+<h2 style="font-family:'Space Grotesk';font-size:1.9rem;line-height:1.2;margin:0 0 14px">From notes to structured design, in minutes.</h2>
+<p style="font-size:1.02rem;color:rgba(255,255,255,0.7);line-height:1.65;margin:0 0 12px">AI analyses your workshop notes and proposes solutions — updating the Business Process Design with structured entries for solutions, configuration, and key decisions.</p>
+<p style="font-size:1.02rem;color:rgba(255,255,255,0.7);line-height:1.65;margin:0">Accept, review, or reject each proposal directly in the platform — with full traceability back to the note that triggered it.</p>
+</div>
+</div></div>
+
+<!-- FEATURE: Process Diagram (AI) image right -->
+<div style="border-bottom:1px solid rgba(255,255,255,0.1)"><div style="max-width:1180px;margin:0 auto;padding:72px 40px;display:grid;grid-template-columns:1fr 1.15fr;gap:52px;align-items:center">
+<div>
+<span style="display:inline-flex;align-items:center;gap:6px;font-family:'IBM Plex Mono';font-size:0.68rem;letter-spacing:0.08em;text-transform:uppercase;color:#8FA0FF;background:rgba(143,160,255,0.14);border:1px solid rgba(143,160,255,0.35);border-radius:99px;padding:4px 10px;margin-bottom:16px"><span style="width:5px;height:5px;background:#8FA0FF;border-radius:50%"></span>AI-assisted</span>
+<p style="font-family:'IBM Plex Mono';font-size:0.75rem;letter-spacing:0.14em;text-transform:uppercase;color:rgba(255,255,255,0.5);margin:0 0 10px">Process diagrams</p>
+<h2 style="font-family:'Space Grotesk';font-size:1.9rem;line-height:1.2;margin:0 0 14px">Describe the process. Get the diagram.</h2>
+<p style="font-size:1.02rem;color:rgba(255,255,255,0.7);line-height:1.65;margin:0 0 12px">Explain a business process in plain English — lanes, steps, decisions, and flows — and DesignVeave builds the swimlane diagram. Refine it, re-describe it, or edit directly.</p>
+<p style="font-size:1.02rem;color:rgba(255,255,255,0.7);line-height:1.65;margin:0">The diagram lives inside the BPD and travels with the design — no separate file that goes stale.</p>
+</div>
+<div><img src="assets/designveave-process-diagram.png" alt="DesignVeave AI process diagram generation" style="width:100%;display:block;border-radius:12px;border:1px solid rgba(255,255,255,0.12);box-shadow:0 20px 50px rgba(0,0,0,0.4)"><p style="font-family:'IBM Plex Mono';font-size:0.72rem;color:rgba(255,255,255,0.45);text-align:center;margin:12px 0 0;letter-spacing:0.04em">Business language typed left, live swimlane diagram generated right</p></div>
+</div></div>
+
+<!-- FEATURE: Design Doc image left -->
+<div style="border-bottom:1px solid rgba(255,255,255,0.1);background:#12172a"><div style="max-width:1180px;margin:0 auto;padding:72px 40px;display:grid;grid-template-columns:1.15fr 1fr;gap:52px;align-items:center">
+<div><img src="assets/designveave-design-doc.png" alt="DesignVeave design document" style="width:100%;display:block;border-radius:12px;border:1px solid rgba(255,255,255,0.12);box-shadow:0 20px 50px rgba(0,0,0,0.4)"><p style="font-family:'IBM Plex Mono';font-size:0.72rem;color:rgba(255,255,255,0.45);text-align:center;margin:12px 0 0;letter-spacing:0.04em">The design document — requirements, solutions, gaps and decisions, all linked and traceable</p></div>
+<div>
+<span style="display:inline-flex;align-items:center;gap:6px;font-family:'IBM Plex Mono';font-size:0.68rem;letter-spacing:0.08em;text-transform:uppercase;color:#8FA0FF;background:rgba(143,160,255,0.14);border:1px solid rgba(143,160,255,0.35);border-radius:99px;padding:4px 10px;margin-bottom:16px"><span style="width:5px;height:5px;background:#8FA0FF;border-radius:50%"></span>AI-assisted</span>
+<p style="font-family:'IBM Plex Mono';font-size:0.75rem;letter-spacing:0.14em;text-transform:uppercase;color:rgba(255,255,255,0.5);margin:0 0 10px">Process design</p>
+<h2 style="font-family:'Space Grotesk';font-size:1.9rem;line-height:1.2;margin:0 0 14px">Structured documentation that builds itself.</h2>
+<p style="font-size:1.02rem;color:rgba(255,255,255,0.7);line-height:1.65;margin:0 0 12px">Business process documentation organized by area and process — not by file share. Teams see the design as it happens rather than waiting for a document written after the fact.</p>
+<p style="font-size:1.02rem;color:rgba(255,255,255,0.7);line-height:1.65;margin:0">Requirements, decisions, and RICEF scope linked to the process they belong to — not floating in a spreadsheet.</p>
+</div>
+</div></div>
+
+<!-- stats -->
+<div style="border-bottom:1px solid rgba(255,255,255,0.1)"><div style="max-width:1180px;margin:0 auto;padding:52px 40px;display:grid;grid-template-columns:repeat(4,1fr);gap:32px;text-align:center">
+<div><p style="font-family:'Space Grotesk';font-size:2.2rem;font-weight:700;color:#8FA0FF;margin:0">100%</p><p style="font-size:0.9rem;color:rgba(255,255,255,0.6);margin:6px 0 0">Workshop decisions traceable</p></div>
+<div><p style="font-family:'Space Grotesk';font-size:2.2rem;font-weight:700;color:#E7A15C;margin:0">1</p><p style="font-size:0.9rem;color:rgba(255,255,255,0.6);margin:6px 0 0">Workspace from discovery to build</p></div>
+<div><p style="font-family:'Space Grotesk';font-size:2.2rem;font-weight:700;color:#8FA0FF;margin:0">AI</p><p style="font-size:0.9rem;color:rgba(255,255,255,0.6);margin:6px 0 0">Assisted at every stage</p></div>
+<div><p style="font-family:'Space Grotesk';font-size:2.2rem;font-weight:700;color:#E7A15C;margin:0">Live</p><p style="font-size:0.9rem;color:rgba(255,255,255,0.6);margin:6px 0 0">Design visibility as it happens</p></div>
+</div></div>
+
+<!-- more capabilities grid -->
+<div style="border-bottom:1px solid rgba(255,255,255,0.1)"><div style="max-width:1180px;margin:0 auto;padding:72px 40px">
+<p style="display:inline-flex;align-items:center;gap:8px;font-family:'IBM Plex Mono';font-size:0.78rem;letter-spacing:0.16em;text-transform:uppercase;color:rgba(255,255,255,0.6);margin:0 0 12px"><span style="width:6px;height:6px;background:#E7A15C;border-radius:50%"></span>More capabilities</p>
+<h2 style="font-family:'Space Grotesk';font-size:2rem;margin:0 0 30px;max-width:640px">Everything the design phase needs, in one place.</h2>
+<div style="display:grid;grid-template-columns:repeat(3,1fr);gap:20px">
+<div data-shot="assets/designveave-find-similar.png" style="position:relative;cursor:zoom-in;background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.12);border-radius:12px;padding:24px 22px"><span style="position:absolute;top:14px;right:14px;width:28px;height:28px;border-radius:7px;background:rgba(143,160,255,0.14);border:1px solid rgba(143,160,255,0.35);display:flex;align-items:center;justify-content:center"><svg width="13" height="13" viewBox="0 0 24 24" fill="none"><path d="M9 3H5a2 2 0 0 0-2 2v4M15 3h4a2 2 0 0 1 2 2v4M9 21H5a2 2 0 0 1-2-2v-4M15 21h4a2 2 0 0 0 2-2v-4" stroke="#8FA0FF" stroke-width="2" stroke-linecap="round"/></svg></span><span style="display:inline-flex;align-items:center;gap:5px;font-family:'IBM Plex Mono';font-size:0.62rem;letter-spacing:0.08em;text-transform:uppercase;color:#8FA0FF;background:rgba(143,160,255,0.14);border:1px solid rgba(143,160,255,0.35);border-radius:99px;padding:3px 9px;margin-bottom:12px"><span style="width:5px;height:5px;background:#8FA0FF;border-radius:50%"></span>AI-assisted</span><h3 style="font-family:'Space Grotesk';font-size:1.08rem;margin:0 0 8px">Discovery &amp; reusability</h3><p style="font-size:0.93rem;color:rgba(255,255,255,0.65);margin:0">Semantically searches prior BPDs and surfaces the best match with a relevance score — copy requirements, solutions and decisions straight in.</p><p style="font-family:'IBM Plex Mono';font-size:0.68rem;color:#8FA0FF;margin:14px 0 0">Click to preview →</p></div>
+<div data-shot="assets/designveave-bpd-validation.png" style="position:relative;cursor:zoom-in;background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.12);border-radius:12px;padding:24px 22px"><span style="position:absolute;top:14px;right:14px;width:28px;height:28px;border-radius:7px;background:rgba(143,160,255,0.14);border:1px solid rgba(143,160,255,0.35);display:flex;align-items:center;justify-content:center"><svg width="13" height="13" viewBox="0 0 24 24" fill="none"><path d="M9 3H5a2 2 0 0 0-2 2v4M15 3h4a2 2 0 0 1 2 2v4M9 21H5a2 2 0 0 1-2-2v-4M15 21h4a2 2 0 0 0 2-2v-4" stroke="#8FA0FF" stroke-width="2" stroke-linecap="round"/></svg></span><span style="display:inline-flex;align-items:center;gap:5px;font-family:'IBM Plex Mono';font-size:0.62rem;letter-spacing:0.08em;text-transform:uppercase;color:#8FA0FF;background:rgba(143,160,255,0.14);border:1px solid rgba(143,160,255,0.35);border-radius:99px;padding:3px 9px;margin-bottom:12px"><span style="width:5px;height:5px;background:#8FA0FF;border-radius:50%"></span>AI-assisted</span><h3 style="font-family:'Space Grotesk';font-size:1.08rem;margin:0 0 8px">BPD validation</h3><p style="font-size:0.93rem;color:rgba(255,255,255,0.65);margin:0">Before submission, DesignVeave checks the BPD for completeness — flagging gaps, missing decisions, and unresolved requirements.</p><p style="font-family:'IBM Plex Mono';font-size:0.68rem;color:#8FA0FF;margin:14px 0 0">Click to preview →</p></div>
+<div data-shot="assets/designveave-ricef-register.png" style="position:relative;cursor:zoom-in;background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.12);border-radius:12px;padding:24px 22px"><span style="position:absolute;top:14px;right:14px;width:28px;height:28px;border-radius:7px;background:rgba(143,160,255,0.14);border:1px solid rgba(143,160,255,0.35);display:flex;align-items:center;justify-content:center"><svg width="13" height="13" viewBox="0 0 24 24" fill="none"><path d="M9 3H5a2 2 0 0 0-2 2v4M15 3h4a2 2 0 0 1 2 2v4M9 21H5a2 2 0 0 1-2-2v-4M15 21h4a2 2 0 0 0 2-2v-4" stroke="#8FA0FF" stroke-width="2" stroke-linecap="round"/></svg></span><h3 style="font-family:'Space Grotesk';font-size:1.08rem;margin:0 0 8px">RICEF &amp; functional specs</h3><p style="font-size:0.93rem;color:rgba(255,255,255,0.65);margin:0">Gap analysis and functional spec authoring with reusable templates — every spec traceable back to the requirement, every requirement back to the workshop.</p><p style="font-family:'IBM Plex Mono';font-size:0.68rem;color:#8FA0FF;margin:14px 0 0">Click to preview →</p></div>
+<div data-shot="assets/designveave-review-approve.png" style="position:relative;cursor:zoom-in;background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.12);border-radius:12px;padding:24px 22px"><span style="position:absolute;top:14px;right:14px;width:28px;height:28px;border-radius:7px;background:rgba(143,160,255,0.14);border:1px solid rgba(143,160,255,0.35);display:flex;align-items:center;justify-content:center"><svg width="13" height="13" viewBox="0 0 24 24" fill="none"><path d="M9 3H5a2 2 0 0 0-2 2v4M15 3h4a2 2 0 0 1 2 2v4M9 21H5a2 2 0 0 1-2-2v-4M15 21h4a2 2 0 0 0 2-2v-4" stroke="#8FA0FF" stroke-width="2" stroke-linecap="round"/></svg></span><h3 style="font-family:'Space Grotesk';font-size:1.08rem;margin:0 0 8px">Continuous review</h3><p style="font-size:0.93rem;color:rgba(255,255,255,0.65);margin:0">The business approves the design in logical units as it's built — approve, reject and defer at every step. Real understanding at sign-off, not a rushed rubber-stamp.</p><p style="font-family:'IBM Plex Mono';font-size:0.68rem;color:#8FA0FF;margin:14px 0 0">Click to preview →</p></div>
+<div data-shot="assets/designveave-governance.png" style="position:relative;cursor:zoom-in;background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.12);border-radius:12px;padding:24px 22px"><span style="position:absolute;top:14px;right:14px;width:28px;height:28px;border-radius:7px;background:rgba(143,160,255,0.14);border:1px solid rgba(143,160,255,0.35);display:flex;align-items:center;justify-content:center"><svg width="13" height="13" viewBox="0 0 24 24" fill="none"><path d="M9 3H5a2 2 0 0 0-2 2v4M15 3h4a2 2 0 0 1 2 2v4M9 21H5a2 2 0 0 1-2-2v-4M15 21h4a2 2 0 0 0 2-2v-4" stroke="#8FA0FF" stroke-width="2" stroke-linecap="round"/></svg></span><h3 style="font-family:'Space Grotesk';font-size:1.08rem;margin:0 0 8px">Governance &amp; audit</h3><p style="font-size:0.93rem;color:rgba(255,255,255,0.65);margin:0">Role-based access plus a full audit trail — who changed what, when, and whether a person or the agent made the change.</p><p style="font-family:'IBM Plex Mono';font-size:0.68rem;color:#8FA0FF;margin:14px 0 0">Click to preview →</p></div>
+<div data-shot="assets/designveave-in-app-help.png" style="position:relative;cursor:zoom-in;background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.12);border-radius:12px;padding:24px 22px"><span style="position:absolute;top:14px;right:14px;width:28px;height:28px;border-radius:7px;background:rgba(143,160,255,0.14);border:1px solid rgba(143,160,255,0.35);display:flex;align-items:center;justify-content:center"><svg width="13" height="13" viewBox="0 0 24 24" fill="none"><path d="M9 3H5a2 2 0 0 0-2 2v4M15 3h4a2 2 0 0 1 2 2v4M9 21H5a2 2 0 0 1-2-2v-4M15 21h4a2 2 0 0 0 2-2v-4" stroke="#8FA0FF" stroke-width="2" stroke-linecap="round"/></svg></span><span style="display:inline-flex;align-items:center;gap:5px;font-family:'IBM Plex Mono';font-size:0.62rem;letter-spacing:0.08em;text-transform:uppercase;color:#8FA0FF;background:rgba(143,160,255,0.14);border:1px solid rgba(143,160,255,0.35);border-radius:99px;padding:3px 9px;margin-bottom:12px"><span style="width:5px;height:5px;background:#8FA0FF;border-radius:50%"></span>AI-assisted</span><h3 style="font-family:'Space Grotesk';font-size:1.08rem;margin:0 0 8px">In-app AI help</h3><p style="font-size:0.93rem;color:rgba(255,255,255,0.65);margin:0">Built-in AI answers questions about the platform and your BPD in context — how to create diagrams, why a document is read-only, where to jump next — without leaving the screen.</p><p style="font-family:'IBM Plex Mono';font-size:0.68rem;color:#8FA0FF;margin:14px 0 0">Click to preview →</p></div>
+</div>
+</div></div>
+
+<!-- demo video -->
+<div style="border-bottom:1px solid rgba(255,255,255,0.1)"><div style="max-width:1180px;margin:0 auto;padding:72px 40px;text-align:center">
+<p style="display:inline-flex;align-items:center;gap:8px;font-family:'IBM Plex Mono';font-size:0.78rem;letter-spacing:0.16em;text-transform:uppercase;color:rgba(255,255,255,0.6);margin:0 0 20px;justify-content:center"><span style="width:6px;height:6px;background:#E7A15C;border-radius:50%"></span>See it in action</p>
+<h2 style="font-family:'Space Grotesk';font-size:2rem;max-width:600px;margin:0 auto 28px">Watch DesignVeave in action.</h2>
+<div style="background:rgba(255,255,255,0.04);border:1.5px dashed rgba(143,160,255,0.5);border-radius:12px;aspect-ratio:16/9;max-width:760px;margin:0 auto;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:12px">
+<svg width="52" height="52" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" stroke="#8FA0FF" stroke-width="1.5"/><path d="M10 8l6 4-6 4V8z" fill="#8FA0FF"/></svg>
+<p style="font-family:'IBM Plex Mono';font-size:0.75rem;letter-spacing:0.1em;text-transform:uppercase;color:rgba(143,160,255,0.8);margin:0">Demo video — coming soon</p>
+</div>
+</div></div>
+
+<!-- cta -->
+<div style="border-bottom:1px solid rgba(255,255,255,0.1)"><div style="max-width:1180px;margin:0 auto;padding:84px 40px;text-align:center">
+<h2 style="font-family:'Space Grotesk';font-size:2.2rem;margin:0 0 12px">Ready to see what a structured design phase looks like?</h2>
+<p style="font-size:1.15rem;color:rgba(255,255,255,0.72);margin:0 auto 30px;max-width:600px">We'll walk you through the platform with your own program context — not a generic demo.</p>
+<a style="display:inline-block;font-family:'Space Grotesk';font-weight:600;padding:15px 32px;border-radius:8px;background:#8FA0FF;color:#0E1220">Request a walkthrough</a>
+</div></div>
+
+<footer><div style="max-width:1180px;margin:0 auto;padding:52px 40px 36px">
+<div style="display:grid;grid-template-columns:2fr 1fr 1fr;gap:40px">
+<div><a style="display:flex;align-items:center;gap:2px;font-family:'Syne';font-weight:700;font-size:1.15rem;margin-bottom:12px;color:#fff"><svg viewBox="0 0 24 24" style="width:0.82em;height:0.82em;margin-right:2px" fill="none"><path d="M3 21 L12 12 L21 21" stroke="#8FA0FF" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M3 3 L12 12 L21 3" stroke="#E7A15C" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/></svg><span>veave</span></a><p style="font-size:0.92rem;color:rgba(255,255,255,0.6);max-width:340px;margin:0">Unique Business Challenges. Intelligent Solutions.</p></div>
+<div><h4 style="font-family:'IBM Plex Mono';font-size:0.75rem;letter-spacing:0.12em;text-transform:uppercase;margin:0 0 12px;color:rgba(255,255,255,0.9)">Company</h4><div style="display:flex;flex-direction:column;gap:8px;font-size:0.95rem;color:rgba(255,255,255,0.8)"><a data-link href="what-we-build.html">What We Build</a><a data-link>Innovations</a><a data-link href="technology.html">Technology</a><a data-link href="industries.html">Industries</a><a data-link href="about.html">About</a></div></div>
+<div><h4 style="font-family:'IBM Plex Mono';font-size:0.75rem;letter-spacing:0.12em;text-transform:uppercase;margin:0 0 12px;color:rgba(255,255,255,0.9)">Connect</h4><div style="display:flex;flex-direction:column;gap:8px;font-size:0.95rem;color:rgba(255,255,255,0.8)"><a data-link href="mailto:info@xveave.com">info@xveave.com</a><a data-link>+91 99865 06281</a><a data-link href="contact.html">Contact form</a><a data-link>LinkedIn</a><a data-link>@Xveave</a></div></div>
+</div>
+<div style="margin-top:40px;padding-top:20px;border-top:1px solid rgba(255,255,255,0.1);display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;font-family:'IBM Plex Mono';font-size:0.78rem;color:rgba(255,255,255,0.5)"><span>© 2026 Xveave Technologies Private Limited · Bengaluru, India</span><span>Built on the platforms enterprises trust.</span></div>
+</div></footer>
+
+<div id="dv-lb" style="display:none;position:fixed;inset:0;z-index:1000;background:rgba(6,8,16,0.92);backdrop-filter:blur(6px);align-items:center;justify-content:center;padding:40px;cursor:zoom-out">
+<button id="dv-lb-close" style="position:fixed;top:22px;right:26px;width:42px;height:42px;border-radius:50%;background:rgba(255,255,255,0.12);border:1px solid rgba(255,255,255,0.25);color:#fff;font-size:1.4rem;cursor:pointer;display:flex;align-items:center;justify-content:center">×</button>
+<img id="dv-lb-img" alt="Capability preview" style="max-width:90vw;max-height:88vh;border-radius:12px;box-shadow:0 30px 90px rgba(0,0,0,0.7);border:1px solid rgba(255,255,255,0.15)">
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script>
+class Component extends DCLogic {
+  componentDidMount() {
+    const lb = document.getElementById('dv-lb');
+    const img = document.getElementById('dv-lb-img');
+    if (!lb || !img) return;
+    const close = () => { lb.style.display = 'none'; };
+    document.querySelectorAll('[data-shot]').forEach((el) => {
+      el.addEventListener('click', () => { img.src = el.getAttribute('data-shot'); lb.style.display = 'flex'; });
+    });
+    lb.addEventListener('click', close);
+    this._esc = (e) => { if (e.key === 'Escape') close(); };
+    document.addEventListener('keydown', this._esc);
+  }
+  componentWillUnmount() { if (this._esc) document.removeEventListener('keydown', this._esc); }
+}
+</script>
+</body>
+</html>
