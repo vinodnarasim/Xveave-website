@@ -94,7 +94,7 @@ a[data-link]:hover{color:#8FA0FF}
 <p style="font-family:'IBM Plex Mono';font-size:0.72rem;letter-spacing:0.08em;color:#E7A15C;margin:0 0 8px;text-transform:uppercase;line-height:1.4">Product Strategy &amp; Organisational Direction</p>
 <div style="display:flex;gap:10px;flex-wrap:wrap">
 <span style="font-size:0.8rem;color:rgba(255,255,255,0.45);display:inline-flex;align-items:center;gap:4px"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="vertical-align:-1px"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg> Bangalore, India</span>
-<a href="https://www.linkedin.com/in/vinod-kumar-narasimhaiah" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:5px;font-size:0.8rem;color:rgba(255,255,255,0.45);border:1px solid rgba(255,255,255,0.12);border-radius:5px;padding:3px 9px"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" style="vertical-align:-2px"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg> LinkedIn</a>
+<a href="https://www.linkedin.com/in/vinod-kumar-8a2852" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:5px;font-size:0.8rem;color:rgba(255,255,255,0.45);border:1px solid rgba(255,255,255,0.12);border-radius:5px;padding:3px 9px"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" style="vertical-align:-2px"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg> LinkedIn</a>
 </div>
 </div>
 </div>
@@ -141,25 +141,23 @@ a[data-link]:hover{color:#8FA0FF}
 </div>
 <div style="margin-top:40px;padding-top:20px;border-top:1px solid rgba(255,255,255,0.1);display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;font-family:'IBM Plex Mono';font-size:0.78rem;color:rgba(255,255,255,0.5)"><span>© 2026 Xveave Technologies Private Limited · Bengaluru, India</span><span>Built on the platforms enterprises trust.</span></div>
 </div></footer>
-</x-dc>
-
 <script>
-document.querySelectorAll('.bio-toggle').forEach(function(btn) {
-  btn.addEventListener('click', function() {
-    var id = this.getAttribute('data-target');
-    var full = document.getElementById(id + '-full');
-    var preview = document.getElementById(id + '-preview');
-    if (full.style.display === 'none' || full.style.display === '') {
-      full.style.display = 'block';
-      preview.style.display = 'none';
-      this.textContent = 'Show less';
-    } else {
-      full.style.display = 'none';
-      preview.style.display = 'block';
-      this.textContent = 'Read more →';
+document.querySelectorAll(".bio-toggle").forEach(function(btn){
+  btn.addEventListener("click",function(){
+    var id=this.getAttribute("data-target");
+    var full=document.getElementById(id+"-full");
+    var preview=document.getElementById(id+"-preview");
+    if(full.style.display==="none"||full.style.display===""){
+      full.style.display="block";preview.style.display="none";
+      this.textContent="Show less";
+    }else{
+      full.style.display="none";preview.style.display="block";
+      this.textContent="Read more →";
     }
   });
 });
 </script>
+</x-dc>
+
 </body>
 </html>
