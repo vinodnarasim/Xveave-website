@@ -1839,3 +1839,30 @@
     throw err;
   });
 })();
+
+/* ------------------------------------------------------------------ *
+ * Xveave — "Read more" bio toggles (About page).
+ * Appended after the DC runtime. Delegated on `document` so it keeps
+ * working after the runtime replaces <x-dc> with its React-rendered
+ * #dc-root. Harmless on every other page: it only acts when a
+ * [data-readmore] button is actually clicked.
+ * NOTE: support.js is a generated file; if it is ever rebuilt from
+ * source this block must be re-appended (or moved into the build).
+ * ------------------------------------------------------------------ */
+(function () {
+  function toggle(btn) {
+    var key = btn.getAttribute("data-readmore");
+    if (!key) return;
+    var full = document.getElementById(key + "-full");
+    var preview = document.getElementById(key + "-preview");
+    if (!full || !preview) return;
+    var isOpen = full.style.display === "block";
+    full.style.display = isOpen ? "none" : "block";
+    preview.style.display = isOpen ? "block" : "none";
+    btn.textContent = isOpen ? "Read more \u2192" : "Show less";
+  }
+  document.addEventListener("click", function (e) {
+    var btn = e.target && e.target.closest ? e.target.closest("[data-readmore]") : null;
+    if (btn) toggle(btn);
+  });
+})();
