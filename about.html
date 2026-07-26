@@ -82,7 +82,6 @@ a[data-link]:hover{color:#8FA0FF}
 <p style="display:inline-flex;align-items:center;gap:8px;font-family:'IBM Plex Mono';font-size:0.75rem;letter-spacing:0.14em;text-transform:uppercase;color:rgba(255,255,255,0.55);margin:0 0 16px"><span style="width:6px;height:6px;background:#E7A15C;border-radius:50%"></span>Leadership</p>
 <p style="font-size:1.1rem;line-height:1.7;color:rgba(255,255,255,0.78);margin:0">Senior practitioners with deep roots in SAP, fashion, retail, and modern AI — brought together at Xveave to build what enterprises actually need, not what fits a template.</p>
 </div></div>
-</x-dc>
 
 <div style="max-width:1180px;margin:0 auto;padding:0 40px 64px"><div style="border-top:1px solid rgba(255,255,255,0.1);padding-top:52px">
 <p style="display:inline-flex;align-items:center;gap:8px;font-family:'IBM Plex Mono';font-size:0.75rem;letter-spacing:0.14em;text-transform:uppercase;color:rgba(255,255,255,0.55);margin:0 0 40px"><span style="width:6px;height:6px;background:#E7A15C;border-radius:50%"></span>The Team</p>
@@ -103,7 +102,7 @@ a[data-link]:hover{color:#8FA0FF}
 <div id="vinod-full" style="display:none">
 <p style="font-size:0.96rem;line-height:1.7;color:rgba(255,255,255,0.72);margin:0 0 8px">Vinod brings over 26 years of experience at the intersection of SAP, enterprise product development, and AI-augmented engineering. He has led global delivery teams across SAP Fashion and Retail implementations, cloud solution builds on SAP BTP, and enterprise transformation programs for leading brands in the US and Europe. At Rizing, he served as Global Technology Lead for Consumer Industries; at attune Consulting, he designed and deployed the attune Fashion Suite — adopted by global fashion and retail brands as a model company accelerator. His SAP career began at SAP Labs India, where he spent nearly a decade as Product Manager and Development Architect for SAP Fashion. At Xveave, Vinod drives product strategy and the overall direction of the organization.</p>
 </div>
-<button  style="background:none;border:none;color:#8FA0FF;font-size:0.85rem;cursor:pointer;padding:0;font-family:'IBM Plex Sans'">Read more →</button>
+<button onclick="var f=document.getElementById('vinod-full'),p=document.getElementById('vinod-preview');if(f.style.display==='none'||f.style.display===''){f.style.display='block';p.style.display='none';this.textContent='Show less'}else{f.style.display='none';p.style.display='block';this.textContent='Read more →'}" style="background:none;border:none;color:#8FA0FF;font-size:0.85rem;cursor:pointer;padding:0;font-family:'IBM Plex Sans'">Read more →</button>
 </div>
 <div style="background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.1);border-radius:14px;padding:32px 28px">
 <div style="display:flex;align-items:flex-start;gap:20px;margin-bottom:20px">
@@ -121,7 +120,7 @@ a[data-link]:hover{color:#8FA0FF}
 <div id="kiran-full" style="display:none">
 <p style="font-size:0.96rem;line-height:1.7;color:rgba(255,255,255,0.72);margin:0 0 8px">Kiran is an SAP Solution Architect with over 24 years of enterprise technology experience, including 17 years at SAP. He brings deep expertise in SAP S/4HANA, SAP BTP, SAP Business AI, and cloud-native application development — with extensive functional knowledge across the retail and fashion value chain. He has worked with leading global brands including Marks &amp; Spencer, H&amp;M, Nike, Unilever, Burberry, and Brooks Brothers, delivering transformation initiatives across Merchandising, Replenishment, Inventory Management, Store Operations, Omnichannel Commerce, and Order-to-Cash. At Xveave, Kiran heads product development and SAP AI transformation.</p>
 </div>
-<button  style="background:none;border:none;color:#8FA0FF;font-size:0.85rem;cursor:pointer;padding:0;font-family:'IBM Plex Sans'">Read more →</button>
+<button onclick="var f=document.getElementById('kiran-full'),p=document.getElementById('kiran-preview');if(f.style.display==='none'||f.style.display===''){f.style.display='block';p.style.display='none';this.textContent='Show less'}else{f.style.display='none';p.style.display='block';this.textContent='Read more →'}" style="background:none;border:none;color:#8FA0FF;font-size:0.85rem;cursor:pointer;padding:0;font-family:'IBM Plex Sans'">Read more →</button>
 </div>
 </div>
 </div></div>
@@ -142,27 +141,7 @@ a[data-link]:hover{color:#8FA0FF}
 </div>
 <div style="margin-top:40px;padding-top:20px;border-top:1px solid rgba(255,255,255,0.1);display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;font-family:'IBM Plex Mono';font-size:0.78rem;color:rgba(255,255,255,0.5)"><span>© 2026 Xveave Technologies Private Limited · Bengaluru, India</span><span>Built on the platforms enterprises trust.</span></div>
 </div></footer>
+</x-dc>
 
-
-
-<script>
-document.body.addEventListener('click', function(e) {
-  var btn = e.target.closest('[data-toggle]');
-  if (!btn) return;
-  var id = btn.getAttribute('data-toggle');
-  var full = document.getElementById(id + '-full');
-  var preview = document.getElementById(id + '-preview');
-  if (!full || !preview) return;
-  if (full.style.display === 'none' || full.style.display === '') {
-    full.style.display = 'block';
-    preview.style.display = 'none';
-    btn.textContent = 'Show less';
-  } else {
-    full.style.display = 'none';
-    preview.style.display = 'block';
-    btn.textContent = 'Read more →';
-  }
-});
-</script>
 </body>
 </html>
