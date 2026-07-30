@@ -93,5 +93,17 @@ input:focus,textarea:focus{outline:none;border-color:#8FA0FF !important}
 <div style="margin-top:40px;padding-top:20px;border-top:1px solid rgba(255,255,255,0.1);display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;font-family:'IBM Plex Mono';font-size:0.78rem;color:rgba(255,255,255,0.5)"><span>© 2026 Xveave Technologies Private Limited · Bengaluru, India</span><span>Built on the platforms enterprises trust.</span></div>
 </div></footer>
 </x-dc>
+<script>
+document.addEventListener("submit", function (e) {
+  var f = e.target;
+  if (f && f.matches && f.matches("form[action*="formspree"]")) {
+    if (!f.checkValidity()) {
+      e.preventDefault();
+      e.stopImmediatePropagation();
+      f.reportValidity();
+    }
+  }
+}, true);
+</script>
 </body>
 </html>
