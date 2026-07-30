@@ -126,3 +126,28 @@ document.addEventListener("submit", function (e) {
 </script>
 </body>
 </html>
+<script>
+(function () {
+  function apply(f) {
+    if (!f) return;
+    ["#name", "#email", "#message"].forEach(function (sel) {
+      var el = f.querySelector(sel);
+      if (el) el.required = true;
+    });
+    if (!f.__guard) {
+      f.__guard = 1;
+      f.addEventListener("submit", function (ev) {
+        if (!f.checkValidity()) {
+          ev.preventDefault();
+          ev.stopImmediatePropagation();
+          f.reportValidity();
+        }
+      }, true);
+    }
+  }
+  function scan() { apply(document.querySelector('form[action*="formspree"]')); }
+  scan();
+  document.addEventListener("DOMContentLoaded", scan);
+  new MutationObserver(scan).observe(document.documentElement, { childList: true, subtree: true });
+})();
+</script>
