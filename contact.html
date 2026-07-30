@@ -105,5 +105,24 @@ document.addEventListener("submit", function (e) {
   }
 }, true);
 </script>
+<script>
+(function () {
+  function apply() {
+    var f = document.querySelector("form[action*="formspree"]");
+    if (!f) return false;
+    var e = f.querySelector("#email");   if (e) e.required = true;
+    var n = f.querySelector("#name");    if (n) n.required = true;
+    var m = f.querySelector("#message"); if (m) m.required = true;
+    // safety net: block submit if still invalid
+    if (!f.__g) { f.__g = 1; f.addEventListener("submit", function (ev) {
+      if (!f.checkValidity()) { ev.preventDefault(); ev.stopImmediatePropagation(); f.reportValidity(); }
+    }, true); }
+    return true;
+  }
+  var t = setInterval(function(){ if (apply()) {} }, 400);
+  setTimeout(function(){ clearInterval(t); }, 6000);
+  document.addEventListener("DOMContentLoaded", apply);
+})();
+</script>
 </body>
 </html>
